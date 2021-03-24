@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+
+<link rel="icon" type="image/png" href="/img/favicon.png" />
+
+
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>:Spk Wifi0871916391:</title>
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+    <link href="theme.css" rel="stylesheet">
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+  </head>
+  <body role="document" onunload="LogoutNoAsk();">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" >IP : $(ip)</a>
+        </div>
+        
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+     <div class="alert alert-success" role="alert">
+        <strong>Login Success!</strong> ท่านได้เข้าสู่อินเตอร์เน็ตเป็นที่เรียบร้อยแล้ว.
+     </div>
+     <div class="jumbotron" style="text-align: center;">
+     <center><img src="img/logo1.png"></center>
+     <h2> ยินดีต้อนรับ $(username) </h2>
+        <p>ออกจากระบบทุกครั้งหลังจากใช้งานเสร็จ</p>
+
+<center>
+     
+<table border="0" width="330x" height="100px" cellpadding="0" cellspacing="0">
+	<tr><td class="status"width="150px">&nbsp;&nbsp;IP address</td><td class="status">: $(ip)</td></tr>
+	<tr><td class="status">&nbsp;&nbsp;MAC address</td><td class="status">: $(mac)</td></tr>
+	<tr><td class="status">&nbsp;&nbsp;อัพโหลด</td><td class="status">: $(bytes-in-nice)</td></tr>
+	<tr><td class="status">&nbsp;&nbsp;ดาวน์โหลด</td><td class="status">: $(bytes-out-nice)</td></tr>
+	<tr><td class="status">&nbsp;&nbsp;เวลาที่ออนไลน์</td><td class="status">: $(uptime)</td></tr>
+	$(if session-time-left)
+	<tr><td class="status">&nbsp;&nbsp;เวลาคงเหลือ</td><td class="status">: $(session-time-left)</td></tr>
+$(endif)
+	
+
+
+</table>
+ </center>     </div>
+  
+
+
+ 
+<div class="row">
+  <div class="col-md-4"> <a href="http://www.google.co.th" class="btn btn-lg btn-info" role="button" style="width: 100%" target="_blank"><font color="#ffffff" size="3">
+  <span class="glyphicon glyphicon-search"></span>Google</font></a></br></div>
+  <div class="col-md-4"><a href="https://www.facebook.com" class="btn btn-lg btn-primary" role="button"style="width: 100%" target="_blank"><font color="#ffffff" size="3"><span class="glyphicon glyphicon-thumbs-up"></span>Facebook</font></a></div>
+  <div class="col-md-4">   <a href="http://www.youtube.com" class="btn btn-lg btn-success" role="button"style="width: 100%" target="_blank"><font color="#ffffff" size="3"> <span class="glyphicon glyphicon-expand"></span>Youtube</font></a></div>
+
+</div></br>
+  <div class=".col-md-6 .col-md-offset-3">
+    <form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+    <input class="btn btn-lg btn-danger" role="button"style="width: 100%"  type="submit" value="log off">
+</form>
+</div> 
+
+
+
+</div> 
+
+<!-- /container -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    window.onbeforeunload = "return myFunction()";
+};</script>
+<script>
+function myFunction() {
+    return "Write something clever here...";
+}
+</script>
+    <!--<script src="../../dist/js/bootstrap.min.js"></script>-->
+    <!--<script src="../../assets/js/docs.min.js"></script>-->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+
+  <div id="" align="center">
+
+
+
+<br>
+               
+
+
+
+
+
+</body>
+
+</html>

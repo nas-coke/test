@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>:Nad Wifi0853566709:</title>
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="theme.css" rel="stylesheet">    
+  </head>
+  <body>
+  $(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="status.html" /><!-- value="$(link-orig)"  -->
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	</script>
+$(endif)
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" >IP : $(ip)</a>
+        </div>
+        
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <div>
+
+      	<div id="" align="center">
+               <div style="text-align: center;">
+     <center><img src="img/logo1.png"></center>
+	 <h1><p style="color:red">ซื้อคูปองออนไลน์ในราคาประหยัด</p></h1>
+	 <h4><p style="color:blue">1 วัน 15 บาท</p></h4>
+	 <h4><p style="color:blue">3 วัน 40 บาท</p></h4>
+	 <h4><p style="color:blue">7 วัน 90 บาท</p></h4>
+	 <h4><p style="color:blue">15 วัน 160 บาท</p></h4>
+	 <h4><p style="color:blue">30 วัน 250 บาท</p></h4>
+	 <h1><p style="color:red">แอดไลน์มาที่  id: nad_tc</p></h1>
+
+	
+      </div>
+
+		<form name="login" action="$(link-login-only)" method="post"
+			$(if chap-id) onSubmit="return doLogin()" $(endif)>
+			<input type="hidden" name="dst" value="$(link-orig)" /><!-- หน้าเว็บที่จะให้ตัดเข้า -->
+			<input type="hidden" name="popup" value="true" />
+        <input type="text"  class="form-control" style="width: 100%" name="username"  value="$(username)" placeholder="Username" required autofocus><br>
+        <input type="password" class="form-control" style="width: 100%" placeholder="Password" name="password" required>
+		 <td height="54" align="center"><br></td>
+        <button class="btn btn-lg btn-success btn-block" style="width: 100%" type="submit">ลงชื่อเข้าใช้&nbsp;<span class="glyphicon glyphicon-log-in"></span></button>
+		<br>
+		 <div align="center">$(if error)<br>
+
+
+
+                <div class="alert alert-danger" role="alert">
+  <strong>ขออภัยด้วย!  </strong>$(error)</div>$(endif)
+                <script type="text/javascript">
+				var error = "$(error)";
+				if (error == "no valid profile found"){ document.write("บัตรนี้หมดอายุใช้งานแล้วค่ะ ขอบคุณที่ใช้บริการ " );}
+				else if (error == "RADIUS server is not responding"){ document.write("ไม่มีชื่อผู้ใช้อยู่ในระบบ");}
+				</script>
+
+
+
+
+<br>
+
+
+
+
+				</div>
+
+
+
+		</form>
+		</div>
+      <div class="footer">
+      </div>
+
+    </div> <!-- /container -->
+
+ </font>
+ <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+ </body>
+</html>
